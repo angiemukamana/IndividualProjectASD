@@ -1,0 +1,147 @@
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 70px;
+    font-family: "Caesar Dressing", system-ui;
+    font-weight: 800;
+    font-style: normal;
+    color: white;
+}
+
+h2 {
+    
+    font-family: "Sigmar", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+
+h3 {
+    text-align: center;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+
+  .column2 {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row2::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /* NAVIGATION */
+  .navbar {
+    overflow: hidden;
+    background-color: rgb(163, 1, 1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: rgb(255, 225, 53);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+  
+  .main {
+    padding: 16px;
+    margin-top: 30px;
+    height: 1500px; /* Used in this example to enable scrolling */
+  }
+  
+/* COLMUNS */
+  @media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+  }
+  @media (max-width: 768px) {
+    h1 {
+        font-size: 30px; /* Font size for tablets */
+    }
+    h2 {
+        font-size: 30px; /* Font size for tablets */
+    }
+
+}
+
+img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+  }
+
+/* SPECIALS */
+@media screen and (max-width: 500px) {
+    .column2 {
+      width: 100%;
+    }
+  }
+@media (max-width: 480px) {
+    h1 {
+        font-size: 25px; /* Font size for mobile phones */
+        line-height: 1.4;
+    }
+    h2 {
+        font-size: 23px; /* Font size for mobile phones */
+        line-height: 1.4;
+    }
+
+}
+
+/* IMAGES */
+@media screen and (max-width: 500px) {
+    img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+  }
